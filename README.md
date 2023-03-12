@@ -3,4 +3,4 @@
 Plan to build a e-commerce store with online payment
 
 ## Technology
-.net(v7), EF, Angular
+.Net(v7), EF, Angular(v15)
