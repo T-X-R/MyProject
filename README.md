@@ -6,6 +6,14 @@ Plan to build a e-commerce store with online payment
 .Net(v7), EF, Angular(v15)
 
 ## Backend
+### API - Controllers
+
+
+### Infrastructure - Repository, DbContext, Services
+
+
+### Core - Entities, Interfaces
 
 
 ## Frontend
+
