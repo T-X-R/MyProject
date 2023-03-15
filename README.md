@@ -7,7 +7,7 @@ Plan to build a e-commerce store with online payment
 
 ## Backend
 ### API - Controllers
-
+- AutoMapper
 
 ### Infrastructure - Repository, DbContext, Services
 
