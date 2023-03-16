@@ -9,6 +9,8 @@ Plan to build a e-commerce store with online payment
 ### API - Controllers
 - AutoMapper
 - ErrorHandler
+- Pagination and Filters
+
 
 ### Infrastructure - Repository, DbContext, Services
 
