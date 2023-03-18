@@ -36,4 +36,5 @@ Mainly use Angular 15 to build the frontend UI and features.
 - Shop Component: includes filters with types and brands, and sorts with name and price.
 - Product Items: display the products in cards
 - Pagination
-- Shop Routing
+- Product details
+- Shop Routing: lazy loading
