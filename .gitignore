@@ -479,3 +479,5 @@ $RECYCLE.BIN/
 # General
 .DS_Store
 API/appsettings.json
+API/mystore.db-wal
+API/mystore.db-shm
