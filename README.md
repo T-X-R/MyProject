@@ -26,7 +26,8 @@ Mainly use Angular 15 to build the frontend UI and features.
 ### Core Module - core
 - NavBar
 - ErrorHandler: test errors, server errors, not found errors
-- Interceptor: errors
+- Interceptor: errors, loading
+- Section Headers: breadcrumbs
 
 
 ### Shared Module - shared
