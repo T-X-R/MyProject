@@ -2,23 +2,26 @@
 
 Plan to build a e-commerce store with online payment
 
+
 ## Technology
-.Net(v7), EF, Angular(v15)
+.Net(v7), Entity Framework, Angular(v15)
 
 ## Backend
-Mainly use .Net Core 7 to build the backend services.
+Mainly use .Net Core 7 to build the backend API, data entities and services.
 
 ### API - Controllers
 - AutoMapper
 - ErrorHandler
 - Pagination and Filters
 
-
 ### Infrastructure - Repository, DbContext, Services
-
+- Database Migrations
+- Data Seeding
+- Redis
 
 ### Core - Entities, Interfaces
-
+- Database Entities: Product, ProductBrand, ProductType, Basket
+- Specifications
 
 ## Frontend
 Mainly use Angular 15 to build the frontend UI and features.
@@ -29,11 +32,9 @@ Mainly use Angular 15 to build the frontend UI and features.
 - Interceptor: errors, loading
 - Section Headers: breadcrumbs
 
-
 ### Shared Module - shared
 - Models: includes product, brand, type, pagination, shopParams.
 - Paging Header & Pager: reusable paging components.
-
 
 ### Feature Module - shop
 - Shop Service: connect to backend API services, eg. getProducts, getBrands, getTypes.
