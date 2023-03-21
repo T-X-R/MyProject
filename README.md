@@ -13,6 +13,7 @@ Mainly use .Net Core 7 to build the backend API, data entities and services.
 - AutoMapper
 - ErrorHandler
 - Pagination and Filters
+- Identity Service
 
 ### Infrastructure - Repository, DbContext, Services
 - Database Migrations
@@ -20,8 +21,9 @@ Mainly use .Net Core 7 to build the backend API, data entities and services.
 - Redis
 
 ### Core - Entities, Interfaces
-- Database Entities: Product, ProductBrand, ProductType, Basket
+- Database Entities: Product, ProductBrand, ProductType, Basket, Identity
 - Specifications
+- Token Service
 
 ## Frontend
 Mainly use Angular 15 to build the frontend UI and features.

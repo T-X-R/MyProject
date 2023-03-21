@@ -1,6 +1,7 @@
 using API.Errors;
 using Core.Interfaces;
 using Infrastructure.Data;
+using Infrastructure.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using StackExchange.Redis;
@@ -18,13 +19,14 @@ namespace API.Extensions
             {
                 opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
             });
-            services.AddSingleton<IConnectionMultiplexer>(c => 
+            services.AddSingleton<IConnectionMultiplexer>(c =>
             {
                 var opt = ConfigurationOptions.Parse(config.GetConnectionString("Redis"));
                 return ConnectionMultiplexer.Connect(opt);
             });
             services.AddScoped<IBasketRepository, BasketRepository>();
             services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ITokenService, TokenService>();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.Configure<ApiBehaviorOptions>(opt =>
@@ -45,9 +47,9 @@ namespace API.Extensions
                 };
             });
 
-            services.AddCors(opt => 
+            services.AddCors(opt =>
             {
-                opt.AddPolicy("CorsPolicy", p => 
+                opt.AddPolicy("CorsPolicy", p =>
                 {
                     p.AllowAnyHeader().AllowAnyMethod().WithOrigins("https://localhost:4200");
                 });
