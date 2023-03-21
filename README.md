@@ -24,6 +24,7 @@ Mainly use .Net Core 7 to build the backend API, data entities and services.
 - Database Entities: Product, ProductBrand, ProductType, Basket, Identity
 - Specifications
 - Token Service
+- Data Validation
 
 ## Frontend
 Mainly use Angular 15 to build the frontend UI and features.
