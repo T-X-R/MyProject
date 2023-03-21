@@ -27,13 +27,13 @@ Mainly use .Net Core 7 to build the backend API, data entities and services.
 Mainly use Angular 15 to build the frontend UI and features.
 
 ### Core Module - core
-- NavBar
+- NavBar: display basket
 - ErrorHandler: test errors, server errors, not found errors
 - Interceptor: errors, loading
 - Section Headers: breadcrumbs
 
 ### Shared Module - shared
-- Models: includes product, brand, type, pagination, shopParams.
+- Models: includes product, brand, type, pagination, shopParams, basket.
 - Paging Header & Pager: reusable paging components.
 
 ### Feature Module - shop
@@ -43,3 +43,8 @@ Mainly use Angular 15 to build the frontend UI and features.
 - Pagination
 - Product details
 - Shop Routing: lazy loading
+
+### Other Features
+- Home: a homepage includes a sliding
+- Basket: the shopping cart of users
+- Checkout
