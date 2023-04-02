@@ -34,8 +34,9 @@ Mainly use Angular 15 to build the frontend UI and features.
 - ErrorHandler: test errors, server errors, not found errors
 - Interceptor: errors, loading
 - Section Headers: breadcrumbs
+- Guards: auth
 
-### Shared Module - shared
+### Shared Module - shared 
 - Models: includes product, brand, type, pagination, shopParams, basket.
 - Paging Header & Pager: reusable paging components.
 
@@ -49,5 +50,6 @@ Mainly use Angular 15 to build the frontend UI and features.
 
 ### Other Features
 - Home: a homepage includes a sliding
+- Account: includes login and registration with validation
 - Basket: the shopping cart of users
 - Checkout
